@@ -35,15 +35,19 @@ let tags = {
 }
 const defaultMenu = {
   before: `
-Hai, %ucapan %name! 👋
+*hoee wangsaff men🗿*,
+%name! klik baca selengkapnya..
+untuk memilih fitur, akses
+dengan tanda *.,!,/,#* depanya
+kalo ga paham chat penciptaku🗿👀
   
-*Waktu:* 
-%wib WIB
-%wita WITA
-%wit WIT
-*Hari:* %week
-*Tanggal:* %date
-*Uptime:* %uptime (%muptime)
+*⏱️SAIKI:* 
+%wib WI(KULON)🐦
+%wita WI(TENGAH)🐦
+%wit WI(WETAN)🐦
+*Hari/dino:* %week
+*Tanggalan cuy:* %date
+*Onlenku:* %uptime (%muptime)
 
 *Limit:* %limit
 *Level:* %level
@@ -53,7 +57,7 @@ Hai, %ucapan %name! 👋
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
   after: `*Made by D'anang.w.s™✓*
-*%npmname* | %version
+*©D'anang.w.s™✓* | %version
 ${'```Kawaii_Botz™✓```'}
 `,
 }
@@ -158,9 +162,9 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://Danangws.github.io/', 'Website', '', '', [
-      ['yok dibeli😚', '/donasi'],
-      ['open BO🙈🗿', '/sewa'],
-      ['pencipta saya💖', '/owner']
+      ['mau pinjem🙆', '/donasi'],
+      ['mau nyewa😘😋', '/sewa'],
+      ['penciptanya siapa💖', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
