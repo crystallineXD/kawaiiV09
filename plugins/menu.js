@@ -168,10 +168,8 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     ], m)
     let helloaine = fs.readFileSync('./mp3/menu.opus') 
 conn.sendFile(m.chat, helloaine, '', '', m, true)
-//conn.sendMessage(m.chat, helloaine, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true})
-// await conn.sendMessage(m.chat, { audio: { url: helloaine }, mimetype: 'audio/mp4'}, m)
-}
-    /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
+
+/*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
     let buffer = await res.buffer()
     let message = await prepareWAMessageMedia({ image: buffer }, { upload: conn.waUploadToServer })
@@ -210,6 +208,9 @@ conn.sendFile(m.chat, helloaine, '', '', m, true)
     conn.reply(m.chat, 'Maaf, menu sedang error', m)
     throw e
   }
+}
+//conn.sendMessage(m.chat, helloaine, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
+// await conn.sendMessage(m.chat, { audio: { url: helloaine }, mimetype: 'audio/mp4'}, m)
 }
 handler.help = ['menu']
 handler.tags = ['main']
