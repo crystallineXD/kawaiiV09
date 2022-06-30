@@ -167,7 +167,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       ['penciptanya siapa💖', '/owner']
     ], m)
     let helloaine = fs.readFileSync('./mp3/menu.opus') 
-conn.sendFile(m.chat, helloaine, '', '', m, true)
+conn.sendFile(from,helloaine,messagetype.audio,{quoted,mek,mymetype: 'audio/mp4',ptt:true})
 
 /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
@@ -209,9 +209,7 @@ conn.sendFile(m.chat, helloaine, '', '', m, true)
     throw e
   }
 }
-//conn.sendMessage(m.chat, helloaine, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
-// await conn.sendMessage(m.chat, { audio: { url: helloaine }, mimetype: 'audio/mp4'}, m)
-}
+
 handler.help = ['menu']
 handler.tags = ['main']
 handler.command = /^(menu|help|\?)$/i
