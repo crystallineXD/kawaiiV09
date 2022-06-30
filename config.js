@@ -41,7 +41,7 @@ const spack = fs.readFileSync("lib/exif.json")
 const stickerpack = JSON.parse(spack)
 if (stickerpack.spackname == '') {
   var sticker_name = '@Kawaii_botz™✓'
-  var sticker_author = 'Danang.w.s™✓
+  var sticker_author = 'Danang.w.s™✓'
 } else {
   var sticker_name = stickerpack.spackname
   var sticker_author = stickerpack.sauthor
