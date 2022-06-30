@@ -166,10 +166,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       ['mau nyewa😘😋', '/sewa'],
       ['penciptanya siapa💖', '/owner']
     ], m)
-    let .menu = fs.readFileSync('./mp3/menu.opus') 
-conn.sendFile(m.chat, .menu, '', '', m, true)
-//conn.sendMessage(m.chat, .menu, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true})
-// await conn.sendMessage(m.chat, { audio: { url: .menu }, mimetype: 'audio/mp4'}, m)
+    let helloaine = fs.readFileSync('./mp3/menu.opus') 
+conn.sendFile(m.chat, helloaine, '', '', m, true)
+//conn.sendMessage(m.chat, helloaine, MessageType.audio, {quoted: m, mimetype: 'audio/mp4', ptt:true})
+// await conn.sendMessage(m.chat, { audio: { url: helloaine }, mimetype: 'audio/mp4'}, m)
 }
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
