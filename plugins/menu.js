@@ -52,9 +52,9 @@ Hai, %ucapan %name! 👋
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
-  after: `*Made by ♡*
+  after: `*Made by D'anang.w.s™✓*
 *%npmname* | %version
-${'```%npmdesc```'}
+${'```Kawaii_Botz™✓```'}
 `,
 }
 let handler = async (m, { conn, usedPrefix: _p }) => {
@@ -135,7 +135,7 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
             }).join('\n')
           }),
           footer
-        ].join('\n')
+        ].join('\n') 
       }),
       after
     ].join('\n')
@@ -157,10 +157,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://aiinne.github.io/', 'Website', '', '', [
-      ['Donate', '/donasi'],
-      ['Sewa Bot', '/sewa'],
-      ['Owner', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://Danangws.github.io/', 'Website', '', '', [
+      ['yok dibeli😚', '/donasi'],
+      ['open BO🙈🗿', '/sewa'],
+      ['pencipta saya💖', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
